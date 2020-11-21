@@ -1,5 +1,7 @@
 ### ETL-Fed-Debt
 
+(main-code-file is jupyter notebooks combined)
+
 ### Extract
   This project intends to analyze the possible relationship between the federal interest rate and total consumer debt levels. This analysis will utilize data from 1991 to 2020, and will primarily pull data from the New York Federal Reserve (newyorkfed.org), and an open source, online community of data scientists known as Kaggle (kaggle.com). 
   The data sources were all xlsm files, so we converted them to .csv and transformed the debt data which had x and y axis flipped from '99-'03. We used pandas read_csv to create a pandas dataframe to transform the data. 
