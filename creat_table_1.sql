@@ -1,11 +1,19 @@
-CREATE TABLE employees (
-    emp_no INT   NOT NULL,
-    emp_title_id VARCHAR(255)   NOT NULL,
-    birth_date date   NOT NULL,
-    first_name VARCHAR(255)   NOT NULL,
-    last_name VARCHAR(255)   NOT NULL,
-    sex VARCHAR(255)   NOT NULL,
-    hire_date DATE   NOT NULL,
-     PRIMARY KEY (emp_no)
+drop table FED_df
+drop table FEDRates_df
+
+CREATE TABLE FED_df (
+    quarter VARCHAR Primary Key,
+    mortgage  FLOAT,
+    he_revolving FLOAT,
+    auto_loan FLOAT,
+    credit_card FLOAT,
+    other FLOAT,
+    total FLOAT,
+    student_loan FLOAT
 
 );
+
+CREATE TABLE FEDRates_df (
+	quarter VARCHAR Primary Key,
+	rate FLOAT
+	);
